@@ -144,7 +144,8 @@ dependencies {
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     implementation fg.deobf("curse.maven:curios-309927:6418456")
-
+    implementation fg.deobf("curse.maven:first-aid-276837:5531834")//First aid comnpat here
+    
     compileOnly "io.github.llamalad7:mixinextras-common:0.3.6"
     annotationProcessor "io.github.llamalad7:mixinextras-common:0.3.6"
     implementation "io.github.llamalad7:mixinextras-neoforge:0.3.6"
