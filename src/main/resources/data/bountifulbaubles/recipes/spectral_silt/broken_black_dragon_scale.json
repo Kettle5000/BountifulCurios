@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["sss", "sSs", "sss"],
+  "key": {
+    "s": { "item": "bountifulbaubles:spectral_silt" },
+    "S": { "tag": "forge:scales/ender_dragon" }
+  },
+  "result": { "item": "bountifulbaubles:broken_black_dragon_scale" }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["sss", "iii", "iss"],
+  "key": {
+    "s": { "item": "bountifulbaubles:spectral_silt" },
+    "i": { "tag": "forge:ingots/iron" }
+  },
+  "result": { "item": "bountifulbaubles:flare_gun" }
+}

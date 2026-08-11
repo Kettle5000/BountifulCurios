@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": { "item": "bountifulbaubles:resplendent_token" },
+  "base": { "item": "bountifulbaubles:shield_cobalt" },
+  "addition": { "item": "bountifulbaubles:obsidian_skull" },
+  "result": { "item": "bountifulbaubles:shield_obsidian" }
+}

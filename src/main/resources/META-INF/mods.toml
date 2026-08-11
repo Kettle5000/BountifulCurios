@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "All Rights Reserved"
+issueTrackerURL = "https://github.com/CursedFlames/BountifulBaubles/issues"
+
+[[mods]]
+modId = "bountifulbaubles"
+version = "${mod_version}"
+displayName = "Bountiful Baubles"
+authors = "CursedFlames, Setadokalo, contributors"
+description = '''
+Adds a variety of Curios accessories and other items inspired by Terraria and other games.
+Ported to Minecraft Forge 1.20.1.
+'''
+
+[[mixins]]
+config = "bountifulbaubles.mixins.json"
+
+[[dependencies.bountifulbaubles]]
+modId = "forge"
+mandatory = true
+versionRange = "[47.3.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bountifulbaubles]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.bountifulbaubles]]
+modId = "curios"
+mandatory = true
+versionRange = "[5.14.1,)"
+ordering = "AFTER"
+side = "BOTH"

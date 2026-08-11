@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": { "item": "bountifulbaubles:resplendent_token" },
+  "base": { "item": "bountifulbaubles:vitamins" },
+  "addition": { "item": "bountifulbaubles:vitamins_a" },
+  "result": { "item": "bountifulbaubles:vitamins_alpha" }
+}

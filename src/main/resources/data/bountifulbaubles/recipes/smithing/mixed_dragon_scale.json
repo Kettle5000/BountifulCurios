@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": { "item": "bountifulbaubles:resplendent_token" },
+  "base": { "item": "bountifulbaubles:bezoar" },
+  "addition": { "item": "bountifulbaubles:black_dragon_scale" },
+  "result": { "item": "bountifulbaubles:mixed_dragon_scale" }
+}

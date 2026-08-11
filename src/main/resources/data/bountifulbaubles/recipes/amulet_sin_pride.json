@@ -1,0 +1,32 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [{ "type": "forge:item_exists", "item": "botania:rune_pride" }],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": ["r", "a", "c"],
+        "key": {
+          "r": { "item": "botania:rune_pride" },
+          "a": { "item": "bountifulbaubles:amulet_sin_empty" },
+          "c": { "item": "bountifulbaubles:crown_gold" }
+        },
+        "result": { "item": "bountifulbaubles:amulet_sin_pride" }
+      }
+    },
+    {
+      "conditions": [{ "type": "forge:true" }],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": ["a", "c"],
+        "key": {
+          "a": { "item": "bountifulbaubles:amulet_sin_empty" },
+          "c": { "item": "bountifulbaubles:crown_gold" }
+        },
+        "result": { "item": "bountifulbaubles:amulet_sin_pride" }
+      }
+    }
+  ]
+}

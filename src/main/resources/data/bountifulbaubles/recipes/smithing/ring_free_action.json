@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": { "item": "bountifulbaubles:resplendent_token" },
+  "base": { "item": "bountifulbaubles:ring_overclocking" },
+  "addition": { "item": "bountifulbaubles:shulker_heart" },
+  "result": { "item": "bountifulbaubles:ring_free_action" }
+}

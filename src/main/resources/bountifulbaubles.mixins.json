@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "cursedflames.bountifulbaubles.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "bountifulbaubles.refmap.json",
+  "mixins": [
+    "PowderSnowBlockMixin",
+    "WebBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

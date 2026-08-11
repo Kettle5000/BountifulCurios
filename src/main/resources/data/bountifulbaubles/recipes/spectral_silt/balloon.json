@@ -1,0 +1,32 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [{ "type": "forge:item_exists", "item": "botania:rune_air" }],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": ["sws", "wRw", "sws"],
+        "key": {
+          "s": { "item": "bountifulbaubles:spectral_silt" },
+          "w": { "tag": "minecraft:wool" },
+          "R": { "item": "botania:rune_air" }
+        },
+        "result": { "item": "bountifulbaubles:balloon" }
+      }
+    },
+    {
+      "conditions": [{ "type": "forge:true" }],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "category": "misc",
+        "pattern": ["sws", "wsw", "sws"],
+        "key": {
+          "s": { "item": "bountifulbaubles:spectral_silt" },
+          "w": { "tag": "minecraft:wool" }
+        },
+        "result": { "item": "bountifulbaubles:balloon" }
+      }
+    }
+  ]
+}

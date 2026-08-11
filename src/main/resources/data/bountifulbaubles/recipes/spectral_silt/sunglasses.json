@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["s s", "gSg", "s s"],
+  "key": {
+    "s": { "item": "bountifulbaubles:spectral_silt" },
+    "g": { "tag": "forge:glass" },
+    "S": { "item": "minecraft:stick" }
+  },
+  "result": { "item": "bountifulbaubles:sunglasses" }
+}

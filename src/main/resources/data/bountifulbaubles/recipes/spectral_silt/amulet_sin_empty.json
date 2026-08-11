@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": ["sSs", "sis", "sss"],
+  "key": {
+    "s": { "item": "bountifulbaubles:spectral_silt" },
+    "i": { "tag": "forge:ingots/iron" },
+    "S": { "item": "minecraft:string" }
+  },
+  "result": { "item": "bountifulbaubles:amulet_sin_empty" }
+}
