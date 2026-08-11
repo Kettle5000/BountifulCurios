@@ -2,6 +2,7 @@ package cursedflames.bountifulbaubles.compat;
 
 import cursedflames.bountifulbaubles.registry.ModItems;
 import cursedflames.bountifulbaubles.compat.CurioUtil;
+
 import ichttt.mods.firstaid.FirstAid;
 import ichttt.mods.firstaid.api.damagesystem.AbstractDamageablePart;
 import ichttt.mods.firstaid.api.event.FirstAidLivingDamageEvent;
@@ -22,13 +23,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class BrokenHeartFirstAidCompat {
-    public static final String FIRSTAID_MODID = "firstaid";
-    private static final UUID BROKEN_HEART_UUID = UUID.fromString("BBA1B2C3-D4E5-F6A7-B8C9-D0E1F2A3B4C5");
+import static cursedflames.bountifulbaubles.event.CommonEvents.BROKEN_HEART_UUID;
 
-    public static boolean isLoaded() {
-        return ModList.get().isLoaded(FIRSTAID_MODID);
-    }
+public class BrokenHeartFirstAidCompat {
 
     @SubscribeEvent(priority = EventPriority.LOW)
     public static void onFirstAidLivingDamageLow(FirstAidLivingDamageEvent event) {
