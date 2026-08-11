@@ -20,5 +20,8 @@ public final class BountifulBaubles {
         ModItems.ITEMS.register(modBus);
         ModLootModifiers.SERIALIZERS.register(modBus);
         ModTabs.TABS.register(modBus);
+        if (ModList.get().isLoaded("firstaid")) {
+            MinecraftForge.EVENT_BUS.register(BrokenHeartFirstAidCompat.class);
+        }
     }
 }
