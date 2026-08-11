@@ -343,6 +343,8 @@ public final class CommonEvents {
 
     @SubscribeEvent
     public static void onLethalDamage(LivingDamageEvent event) {
+        if (ModList.get().isLoaded("firstaid")) return; //we can improve this later by calling for a constant variable that is defined once instead of calling for this method each time it happens.
+        
         if (!(event.getEntity() instanceof Player player)
                 || player.getHealth() - event.getAmount() >= 1.0F) {
             return;
