@@ -35,7 +35,7 @@ println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty '
 minecraft {
     mappings channel: 'parchment', version: '2023.09.03-1.20.1'
 
-    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+    //accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     enableIdeaPrepareRuns = true
     copyIdeResources = true
@@ -153,7 +153,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"        : "ATM test 1",
+                "Specification-Title"        : "Bountiful Baubles",
                 "Specification-Vendor"       : "keletu",
                 "Specification-Version"      : "1",
                 "Implementation-Title"       : project.name,

@@ -5,7 +5,7 @@ issueTrackerURL = "https://github.com/CursedFlames/BountifulBaubles/issues"
 
 [[mods]]
 modId = "bountifulbaubles"
-version = "${mod_version}"
+version = "1.0.0"
 displayName = "Bountiful Baubles"
 authors = "CursedFlames, Setadokalo, contributors"
 description = '''
