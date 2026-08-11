@@ -16,7 +16,7 @@ public final class AmuletCurioRenderer implements ICurioRenderer.HumanoidRender 
     public AmuletCurioRenderer(ResourceLocation texture) {
         this.texture = texture;
         this.model = new HumanoidModel<>(LayerDefinition.create(
-                HumanoidModel.createMesh(new CubeDeformation(0.15F), 0.0F), 64, 32)
+                        HumanoidModel.createMesh(new CubeDeformation(0.15F), 0.0F), 64, 32)
                 .bakeRoot());
         model.setAllVisible(false);
         model.body.visible = true;

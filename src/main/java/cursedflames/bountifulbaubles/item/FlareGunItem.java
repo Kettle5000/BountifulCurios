@@ -20,7 +20,7 @@ public class FlareGunItem extends BBItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player,
-                                                   InteractionHand hand) {
+                                                  InteractionHand hand) {
         ItemStack gun = player.getItemInHand(hand);
         ItemStack ammo = findAmmo(player);
         if (ammo.isEmpty() && !player.getAbilities().instabuild) {

@@ -1,26 +1,17 @@
 package cursedflames.bountifulbaubles.registry;
 
 import cursedflames.bountifulbaubles.BountifulBaubles;
-import cursedflames.bountifulbaubles.item.BBItem;
-import cursedflames.bountifulbaubles.item.BaubleItem;
-import cursedflames.bountifulbaubles.item.BaubleShieldItem;
-import cursedflames.bountifulbaubles.item.CrownItem;
-import cursedflames.bountifulbaubles.item.FlareGunItem;
-import cursedflames.bountifulbaubles.item.FlywheelRingItem;
-import cursedflames.bountifulbaubles.item.GlintItem;
-import cursedflames.bountifulbaubles.item.MirrorItem;
-import cursedflames.bountifulbaubles.item.PhantomPrismItem;
-import cursedflames.bountifulbaubles.item.ReusableCraftingItem;
+import cursedflames.bountifulbaubles.item.*;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Rarity;
+import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.common.ForgeMod;
 
 import java.util.UUID;
 import java.util.function.Supplier;

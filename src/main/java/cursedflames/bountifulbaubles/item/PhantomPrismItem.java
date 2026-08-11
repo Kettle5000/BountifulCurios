@@ -18,7 +18,7 @@ public class PhantomPrismItem extends BBItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player,
-                                                   InteractionHand hand) {
+                                                  InteractionHand hand) {
         ItemStack stack = player.getItemInHand(hand);
         if (!level.isClientSide) {
             CuriosApi.getCuriosInventory(player).ifPresent(handler -> {
@@ -41,8 +41,8 @@ public class PhantomPrismItem extends BBItem {
                     handler.getUpdatingInventories().add(curio);
                 });
                 player.displayClientMessage(Component.translatable(render
-                        ? "message.bountifulbaubles.prism.visible"
-                        : "message.bountifulbaubles.prism.hidden").withStyle(ChatFormatting.LIGHT_PURPLE),
+                                ? "message.bountifulbaubles.prism.visible"
+                                : "message.bountifulbaubles.prism.hidden").withStyle(ChatFormatting.LIGHT_PURPLE),
                         true);
             });
         }

@@ -2,9 +2,9 @@ package cursedflames.bountifulbaubles.item;
 
 import cursedflames.bountifulbaubles.client.CrownModel;
 import net.minecraft.client.model.HumanoidModel;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterials;
 import net.minecraft.world.item.ItemStack;
@@ -39,9 +39,9 @@ public class CrownItem extends ArmorItem {
 
             @Override
             public HumanoidModel<?> getHumanoidArmorModel(LivingEntity entity,
-                                                           ItemStack stack,
-                                                           EquipmentSlot slot,
-                                                           HumanoidModel<?> original) {
+                                                          ItemStack stack,
+                                                          EquipmentSlot slot,
+                                                          HumanoidModel<?> original) {
                 return slot == EquipmentSlot.HEAD ? crownModel : original;
             }
         });

@@ -1,11 +1,7 @@
 package cursedflames.bountifulbaubles;
 
 import com.mojang.logging.LogUtils;
-import cursedflames.bountifulbaubles.registry.ModBlocks;
-import cursedflames.bountifulbaubles.registry.ModEffects;
-import cursedflames.bountifulbaubles.registry.ModItems;
-import cursedflames.bountifulbaubles.registry.ModLootModifiers;
-import cursedflames.bountifulbaubles.registry.ModTabs;
+import cursedflames.bountifulbaubles.registry.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;

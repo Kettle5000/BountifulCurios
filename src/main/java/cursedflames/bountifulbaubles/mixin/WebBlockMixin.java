@@ -17,8 +17,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class WebBlockMixin {
     @Inject(method = "entityInside", at = @At("HEAD"), cancellable = true)
     private void bountifulbaubles$freeActionIgnoresWeb(BlockState state, Level level,
-                                                        BlockPos pos, Entity entity,
-                                                        CallbackInfo callback) {
+                                                       BlockPos pos, Entity entity,
+                                                       CallbackInfo callback) {
         if (entity instanceof Player player
                 && CurioUtil.isEquipped(player, ModItems.RING_FREE_ACTION.get())) {
             callback.cancel();

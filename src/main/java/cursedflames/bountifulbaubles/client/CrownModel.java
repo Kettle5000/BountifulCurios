@@ -5,14 +5,12 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
-import net.minecraft.client.model.geom.builders.CubeDeformation;
-import net.minecraft.client.model.geom.builders.CubeListBuilder;
-import net.minecraft.client.model.geom.builders.LayerDefinition;
-import net.minecraft.client.model.geom.builders.MeshDefinition;
-import net.minecraft.client.model.geom.builders.PartDefinition;
+import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.world.entity.LivingEntity;
 
-/** Restores the 1.12.2 crown's enlarged 16-pixel UV cube and head-only render. */
+/**
+ * Restores the 1.12.2 crown's enlarged 16-pixel UV cube and head-only render.
+ */
 public final class CrownModel extends HumanoidModel<LivingEntity> {
     private CrownModel(ModelPart root) {
         super(root);

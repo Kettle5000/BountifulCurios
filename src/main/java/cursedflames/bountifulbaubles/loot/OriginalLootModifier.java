@@ -13,7 +13,9 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.common.loot.LootModifier;
 
-/** Recreates the weighted 1.12.2 entity and chest pools without replacing loot tables. */
+/**
+ * Recreates the weighted 1.12.2 entity and chest pools without replacing loot tables.
+ */
 public final class OriginalLootModifier extends LootModifier {
     public static final Codec<OriginalLootModifier> CODEC = RecordCodecBuilder.create(instance ->
             codecStart(instance).and(Codec.STRING.fieldOf("pool")
@@ -29,7 +31,7 @@ public final class OriginalLootModifier extends LootModifier {
 
     @Override
     protected ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> loot,
-                                                  LootContext context) {
+                                                 LootContext context) {
         RandomSource random = context.getRandom();
         switch (pool) {
             case "husk" -> add(loot, ModItems.APPLE.get());
@@ -79,7 +81,7 @@ public final class OriginalLootModifier extends LootModifier {
     }
 
     private static void addDungeonPotions(ObjectArrayList<ItemStack> loot,
-                                           RandomSource random) {
+                                          RandomSource random) {
         int rolls = 1 + random.nextInt(6);
         for (int i = 0; i < rolls; i++) {
             int roll = random.nextInt(100);
